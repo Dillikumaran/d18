@@ -1,0 +1,168 @@
+<html>
+<head>
+<style>
+nav
+{
+float:left;
+max_width:160 px;
+margin:0;
+padding:1cm;
+}
+nav ul
+{
+list-style-type:none;
+padding:1cm;
+}
+article
+{
+margin-left:180px;
+border-left:2px solid gray;
+background-color:palegreen;
+overflow:none;
+}
+.container
+ {
+background-color: rgba(0, 0, 0, 0.3);
+border-bottom-left-radius: 50% 40%;
+border-bottom-right-radius: 50% 40%;
+}
+</style>
+</head>
+<meta name ="viewport"content"width=device-width,initial-scale=1.0">
+<body>
+<div class="container" align ="center">
+<h2>ROUND BORDER</h2></div>
+<p><h2>Responsive image</h2></p>
+<img src ="C:\softura\DAY 3\picsd3\html.png"style="width:100%";>
+<br/>
+<h1 style="font-size:10vw">accomodative window</h1>
+<p  style="font-size:5vw">accomodative window</p>
+<p style="font-size:3vw">accomodative window</p>
+<p style="font-size:2vw">accomodative window</p><br/>
+
+<div>
+<header><h1>Learning is Fun</h1></header>
+<nav>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JQuery">JQuery</a></li>
+</ul>
+</nav>
+<article>
+<p><h2>Html</h2>
+The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> directly introduce content into the page. Other tags such as <p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.
+</p>
+<h2>CSS</h2>
+<p>
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+
+Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+
+The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+
+The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
+</p>
+<p><h2>JAVASCRIPT</h2>
+JavaScript (/ˈdʒɑːvəskrɪpt/),[10] often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.[11] Over 97% of websites use JavaScript on the client side for web page behavior,[12] often incorporating third-party libraries.[13] All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+
+JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[14] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+</p>
+<p><h2>JQUERY</h2>
+jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.[3] It is free, open-source software using the permissive MIT License.[4] As of May 2019, jQuery is used by 73% of the 10 million most popular websites.[5] Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having at least 3 to 4 times more usage than any other JavaScript library.[5][6]
+
+jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+</p>
+</article>
+<center><footer>Copyrights reserved</footer></center>
+<h1>
+JS VAERIABLES</h1>
+<p id="p1">
+</p>
+<p id="p2">
+</p>
+<p id ="p3">
+</p>
+<p id="p4">
+</p>
+<script>
+var num1 = 45;
+var  num2=25;
+var res = num1+num2;
+document.getElementById("p1").innerHTML=res;
+</script>
+<br/>
+<script>
+let num1 = 45;
+let  num2=25;
+let res = num1+num2;
+document.getElementById("p2").innerHTML=res;</script>
+<br/>
+<script>
+num1 = 45;
+num2=25;
+res = num1+num2;
+document.getElementById("p3").innerHTML=res;
+let subject="javascript";
+document.getElementById("p4").innerHTML=subject;
+</script>
+<br/>
+<h1>JavaScript Events</h1>
+<p>Come here - lets see how to get focus<br/>
+Go Away - lets see how to lose focus
+</p>
+<p id ="p6" ></p>
+<script>
+setInterval("fokus()",1);
+function fokus()
+{
+var str;
+if(document.hasFocus())
+{
+str ="got focus";
+}
+else
+{
+str="lost focus";
+}
+document.getElementById("p6").innerHTML=str;
+}
+</script>
+<h2>STARTING WITH JAVASCRIPT</h2>
+<button onclick="this.innerHTML=Date()">
+click here</button>
+<br/>
+<nav style="background-color:#808000">
+<h1 style="text-align:center">Navigation Links</h1>
+<ul>
+<li><a href ="https://en.wikipedia.org/wiki/Idli">Idli</a></li>
+<li><a href ="https://en.wikipedia.org/wiki/Dosa">Dosa</a></li>
+<li><a href ="https://en.wikipedia.org/wiki/Vada_(food)">Vada</a></li>
+<li><a href ="https://en.wikipedia.org/wiki/Pongal_(dish)">Pongal</a></li>
+<li><a href ="https://en.wikipedia.org/wiki/Kesari_bat#:~:text=Kesari%20bat%20or%20kesari%20baat,certain%20parts%20of%20northern%20India.">Kesari</a></li>
+</ul>
+</nav>
+<h2>JS DOCUMENT DOTWRITE</h2>
+<script>
+document.write("whatever i write here goes directly to the page");
+</script>
+<script>
+window.alert(2+2);
+</script>
+<button onclick = "window.print()">print</button>
+<br/>
+<p id="p1">
+</p>
+<script>
+let corp="softura",year=2022,tech=".net";
+document.getElementById("p1").innerHTML=corp+" "+year+" "+"is getting trained in"+" "+tech;
+</script>
+</body>
+</html>
