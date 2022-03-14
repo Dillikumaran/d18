@@ -23,7 +23,7 @@ consumed = consumed-350;
 amount = consumed *5;
 Console.WriteLine(amount+450+400);
 }
-else
+else if(consumed>500)
 {
 consumed = consumed-500;
 amount = consumed *7;
