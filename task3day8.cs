@@ -41,7 +41,7 @@ break;
 case "B":
 {
 Console.WriteLine("Enter the mobile NO : ");
-long mobNo=Convert.ToInt32(Console.ReadLine());
+long mobNo=Convert.ToInt64(Console.ReadLine());
 Console.WriteLine("Enter password : ");
 string pass=Console.ReadLine();
 t3d8 obj1 = new t3d8();
