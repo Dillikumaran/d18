@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function vaLogin() {
+            var att = 3;
+            while (att > 0)
+            {
+                document.getElementById("frm1").value;
+                var un = document.getElementById("uname").value;
+                var pd = document.getElementById("pword").value;
+                if (un == "Dillikumaran" && pd == "Dilli20")
+                {
+                    alert("Login Successful");
+                    return true;
+                }
+                else
+                {
+                    alert("Username and Password mismatch");
+                    return false;
+                }
+
+                att--;
+            }
+            document.write("attempts exceeded!!!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Login with your Credentials</h2>
+    <div>
+        <form id="frm1" method="post" name="myForm" action="day13task2.html" >
+            <label>Username : </label>
+            <input type="text" name="uname" id="uname" required /><br />
+            <label>Password : </label>
+            <input type="password" name="pword" id="pword" required />
+            <br />
+            &nbsp; &nbsp; &nbsp; <input type="submit" value="Login" onclick="vaLogin()" />
+        </form>
+    </div>
+</body>
+</html>
