@@ -26,7 +26,7 @@ as
 begin
 return (N'₹'+@amount)
 end
-select BusinessEntityID,dbo.fn_RupeesC(rate) as Dollar 
+select BusinessEntityID,dbo.fn_RupeesC(rate) as Rupees 
 from HumanResources.EmployeePayHistory
 --Task3
 create table tbl_student
@@ -40,7 +40,7 @@ add Gender char(1)
 select * from tbl_student
 alter table tbl_student
 add MobileNO int
-insert into tbl_student values(1,'HARIS',19,'M',7530077615)
+insert into tbl_student values(1,'Dilli',19,'M',9600584521)
 alter table tbl_student
 alter column MobileNO char(10)
 create view task3
@@ -49,7 +49,7 @@ select [Sno],[StuName],[StuAge]
 from [dbo].[tbl_student]
 go
 select *from task3
-insert into tbl_student values(2,'Raveena',19,'F',7530077615)
+insert into tbl_student values(2,'selena',19,'F',9945215421)
 --Task4
 use dillidb
 go
