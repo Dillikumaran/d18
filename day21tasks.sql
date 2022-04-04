@@ -38,8 +38,9 @@ create table tbl_student
 Sno int primary key identity (1,1),
 StuName varchar(20),
 StuAge int,
-MobileNO char(10),
-Gender char(1)
+Gender char(1),
+MobileNO char(10)
+
 )
 insert into tbl_student values('Dilli',19,'M',9600584521)
 
