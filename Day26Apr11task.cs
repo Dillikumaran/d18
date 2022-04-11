@@ -12,7 +12,6 @@ namespace lynq
 
             public int DoctorID { get; set; }
             public string DoctorName { get; set; }
-            public int Age { get; set; }
             public int SpecializationId { get; set; }
         }
         public class Specialization
@@ -26,16 +25,16 @@ namespace lynq
             {
                 IList<Doctor> DocData = new List<Doctor>()
             {
-            new Doctor()  { DoctorID = 1 ,DoctorName="John",Age =22,SpecializationId=4},
-            new Doctor() { DoctorID = 2, DoctorName = "Dillikumaran", Age = 22,SpecializationId=2},
-            new Doctor() { DoctorID = 3, DoctorName = "Vishal", Age = 21,SpecializationId=1},
-            new Doctor() { DoctorID = 4, DoctorName = "Giridharan", Age = 21,SpecializationId=3 },
-            new Doctor() { DoctorID = 5, DoctorName = "Yuvaraj", Age = 40,SpecializationId=2 },
-            new Doctor() { DoctorID = 6, DoctorName = "Harishwar", Age = 40,SpecializationId=1 },
-            new Doctor() { DoctorID = 7, DoctorName = "Abdul_alsudias", Age = 20,SpecializationId=3 },
-            new Doctor() { DoctorID = 8, DoctorName = "Venkat", Age = 20,SpecializationId=4  },
-            new Doctor() { DoctorID = 9, DoctorName = "Abdul_alsudias", Age = 20,SpecializationId=4 },
-            new Doctor() { DoctorID = 10, DoctorName = "Abdul_alsudias", Age = 20,SpecializationId=1 }
+            new Doctor()  { DoctorID = 1 ,DoctorName="John",SpecializationId=4},
+            new Doctor() { DoctorID = 2, DoctorName = "Dillikumaran",SpecializationId=2},
+            new Doctor() { DoctorID = 3, DoctorName = "Vishal",SpecializationId=1},
+            new Doctor() { DoctorID = 4, DoctorName = "Giridharan",SpecializationId=3 },
+            new Doctor() { DoctorID = 5, DoctorName = "Yuvaraj",SpecializationId=2 },
+            new Doctor() { DoctorID = 6, DoctorName = "Harishwar",SpecializationId=1 },
+            new Doctor() { DoctorID = 7, DoctorName = "Abdul_alsudias",SpecializationId=3 },
+            new Doctor() { DoctorID = 8, DoctorName = "Venkat", SpecializationId=4  },
+            new Doctor() { DoctorID = 9, DoctorName = "Abdul_alsudias",SpecializationId=4 },
+            new Doctor() { DoctorID = 10, DoctorName = "Abdul_alsudias",SpecializationId=1 }
             };
                 IList<Specialization> Specializations = new List<Specialization>()
             {
