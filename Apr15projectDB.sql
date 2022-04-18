@@ -35,12 +35,3 @@ Total_Amount int,
 Date date default getdate()
 )
 select * from Purchase
-select * from Purchase order By Date 
-select Name,sum(Total_Amount) bill_amount
-from ProductTable prod 
-Join Purchase pur 
-on prod.ProdID = pur.ProdID 
-join CustomerTable cus 
-on pur.CustID = cus.CustID 
-where pur.CustID=1
-group by Name
