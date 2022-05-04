@@ -1,0 +1,50 @@
+﻿@model IEnumerable<AdoMvcRam.Models.CustomerList>
+@{
+    ViewData["Title"] = "MyADOWebApp";
+}
+
+<div>
+    <table class="customertable">
+        <thead>
+            <tr><td>
+                @using (Html.BeginForm("Insert", "Home",FormMethod.Post))
+                {
+                <input type="submit" value="CREATE" />
+                }
+             </td></tr>
+            <tr>
+                <th>
+                    @Html.DisplayName("Customer Id")
+                </th>
+                <th>
+                    @Html.DisplayName("Customer Name")
+                </th>
+                <th>
+                    @Html.DisplayName("Email ID")
+                </th>
+                <th>
+                    @Html.DisplayName("Mobile No")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var i in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => i.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => i.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => i.EmailId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelitem => i.MobileNo)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
